@@ -2,7 +2,8 @@
 
 A simple demo of google authentication using firebase.
 
-<img src="https://drive.google.com/file/d/1tgb5xHoN1aW3yrthMZCDuEfWkfW8wkzf/view" />
+<img src = "https://user-images.githubusercontent.com/66630141/113504909-1280f000-9559-11eb-8126-d89d2a18e86b.gif" width ="300"/>
+
 
 Hello people! Today we are going to learn how to implement google authentication in our flutter app using `google_sign_in`.
 
