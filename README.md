@@ -44,7 +44,7 @@ Once done. Go ahead and download the `google-services.json` file and place it in
 
 Then add the below line of code to your `app/build.gradle` file.
 
-```
+```dart
 
 apply plugin: 'com.google.gms.google-services'
 
@@ -52,7 +52,7 @@ apply plugin: 'com.google.gms.google-services'
 
 Next step is to add the below line of code to your `project/build.gradle` file.
 
-```
+```dart
 
 classpath 'com.google.gms:google-services:4.2.0'
 
@@ -70,7 +70,7 @@ Go ahead and download the `GoogleService-info.plist` file and place it in your p
 
 Place the below line of codes in the `[my_project]/ios/Runner/Info.plist` file.
 
-```
+```dart
 <!-- Google Sign-in Section -->
 <key>CFBundleURLTypes</key>
 <array>
@@ -111,7 +111,7 @@ That's it folks! Now we are all set with the project setup. Let's move ahead on 
 ## Step 2 :  Install Packages
 
 Place the below dependencies in your `pubspec.yaml` file and run `flutter pub get`
-```
+```dart
   
   google_sign_in: ^5.0.1
   
@@ -119,7 +119,7 @@ Place the below dependencies in your `pubspec.yaml` file and run `flutter pub ge
 
 ## Step 3 : Create Google Sing In Instance
 
-```
+```dart
 
 GoogleSignIn googleSignIn = GoogleSignIn(
     scopes: [
@@ -133,7 +133,7 @@ GoogleSignIn googleSignIn = GoogleSignIn(
 
 `googleSignIn.signIn()` is used to sign in and `googleSignIn.signOut()` is used to sign out and already logged in user.
 
-```
+```dart
 
 Future<void> signIn() async {
     try {
@@ -162,7 +162,7 @@ Future<void> signIn() async {
 
 We can fetch the user information from the `GoogleSignIn` as shown below.
 
-```
+```dart
  Widget buildUserInfo() {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
